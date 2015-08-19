@@ -1,0 +1,4 @@
+. VERSION
+sed -e "s/PRESTO_VERSION 0.115/PRESTO_VERSION ${PRESTO_VERSION}/g" Dockerfile > tmp.dockerfile
+docker build -f tmp.dockerfile -t ${IMAGE}-${PRESTO_VERSION} .
+docker tag -f ${IMAGE}-${PRESTO_VERSION}:latest ${IMAGE}-${PRESTO_VERSION}:$TAG
