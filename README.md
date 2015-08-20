@@ -19,6 +19,7 @@ Modify hack/set-default.sh.tmpl
 ## Run
 
 ```bash
+# Do change the catalog config in etc folder
 # Sync the config in etcd 
 hack/sync_config.sh your_etc_folder etcd_key
 
