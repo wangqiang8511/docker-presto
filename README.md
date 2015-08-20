@@ -1,4 +1,4 @@
-# Apache Hive
+# Facebook Presto
 
 Simple docker images for presto.
 
@@ -29,3 +29,6 @@ hack/start_presto_coordinator.sh
 # Start worker
 hack/start_presto_worker.sh
 ```
+
+## Reference
+[presto](https://prestodb.io/docs/current/index.html)
