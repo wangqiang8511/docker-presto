@@ -14,7 +14,7 @@ if [ -z "$ETCD_SERVER" ]; then
 fi
 
 ETCD_CONF_PREFIX=${ETCD_CONF_PREFIX:-/presto/conf/test}
-/sync_from_etcd.sh $ETCD_CONF_PREFIX etc --peers=$ETCD_SERVER
+/sync_from_etcd.sh $ETCD_CONF_PREFIX $PRESTO_HOME/etc --peers=$ETCD_SERVER
 
 
 DISCOVERY_PORT=${DISCOVERY_PORT:-8080}
